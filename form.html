@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css"><!-- Bootstrap stylesheet -->
-    <link rel="stylesheet" href="./css/custom.css"><!-- Custom stylesheet - linked after Bootstrap so that entries here take precedence and override Bootstrap's style -->
+    <link rel="stylesheet" href="./custom.css"><!-- Custom stylesheet - linked after Bootstrap so that entries here take precedence and override Bootstrap's style -->
 </head>
 <body>
     <!-- Fixed-width container. This container's max-width will change at different breakpoints -->
@@ -30,28 +30,30 @@
                 </div>
             </div>
             <!-- Row 2 -->
-            <div class="row g-0 bg-dark">
+            <div class="row g-3">
                 <div class="col">
-                    <nav class="navbar navbar-expand-lg p-2" data-bs-theme="dark">
+                    <nav class="navbar navbar-expand-lg p-2" data-bs-theme="light">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <div class="navbar-nav">
+                            <div class="navbar-nav nav-pills">
                             <!-- main navigation -->
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                <a class="nav-link" href="./pages/placeholder.html">News</a>
-                                <a class="nav-link" href="./pages/placeholder.html">Taster Modules</a>
-                                <a class="nav-link" href="./pages/placeholder.html">Membership</a>
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">News</a>
+                                <a class="nav-link" aria-current="page" href="#">Taster Modules</a>
+                                <a class="nav-link" aria-current="page" href="#">Membership</a>
                             </div>
                         </div>
                     </nav>
                 </div>
-                <div class="col">
-                    <!-- search box -->
-                    <form class="d-flex p-2" role="search">
-                        <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
-                        <button class="btn btn-outline-info" type="submit">Search</button>
+                <div class="col-auto ms-auto">
+                    <form class="d-none d-sm-flex ms-auto align-items-center" role="search">
+                    <label class="visually-hidden" for="navSearch">Search</label>
+                    <input id="navSearch" class="form-control form-control-sm me-2"
+                            type="search" placeholder="search" aria-label="search"
+                            style="max-width: 220px;">
+                    <button class="btn btn-primary btn-sm" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -62,7 +64,9 @@
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                     <!-- breadcrumbs -->
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        <li class="breadcrumb-item">Home</li>
+                        <li class="breadcrumb-item">News</li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit News Item</li>
                     </ol>
                 </nav>
             </div>
