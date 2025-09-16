@@ -15,15 +15,15 @@
   <div class="container-fluid p-0">
     <header class="header">
       <!-- Row 1 -->
-      <div class="row align-items-center g-2 px-3 pt-3">
+      <div class="row g-3">
         <div class="col-auto">
-          <img src="./images/EduMax_logo.png" alt="EduMax logo" class="img-fluid" style="max-height:96px">
+          <img src="./images/EduMax_logo.png" alt="EduMax logo" class="img-fluid" style="max-height:200px">
         </div>
         <div class="col">
           <h1 class="m-0 header">EduMax</h1>
         </div>
         <div class="col-auto text-end">
-          <a class="btn btn-primary m-2" href="./pages/registration.html">Login</a>
+          <a class="btn btn-primary m-2" href="#">Sign Out</a>
         </div>
       </div>
 
@@ -72,7 +72,12 @@
             <section>
               <h2 class="text-center mb-4">Add/Edit News Item</h2>
 
-              <form>
+              <form action="https://students.open.ac.uk/mct/tm252/reflect/reflect.php"
+                    method="post" accept-charset="utf-8">
+
+                    <!-- Required hidden field -->
+                <input type="hidden" name="itemID" value="10002000-3000-123456abcdef">
+
                 <div class="row g-3 align-items-center mb-2">
                   <div class="col-sm-4">
                     <label for="author" class="form-label">Author name</label>
