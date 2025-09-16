@@ -3,6 +3,20 @@
     color: white;
 }
 
+.header .nav-link {
+    color: #212529
+}
+
+.header .nav-link:hover,
+.header .nav-link:focus {
+  text-decoration: underline;
+}
+
+.header .nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid currentColor;
+}
+
 h1.header {
     font-size: 9vw;
 }
